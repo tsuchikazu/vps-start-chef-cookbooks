@@ -1,1 +1,1 @@
-{  "run_list":[    "role[base]"  ]}
+{  "run_list":[    "role[base]"  ],   "site_user": {    "username": "tsuchikazu",     "ssh_keys": ["ssh-rsa AAAAB3Nz..."]   },   "authorization": {    "sudo": {      "users":["tsuchikazu"]    }  }}
