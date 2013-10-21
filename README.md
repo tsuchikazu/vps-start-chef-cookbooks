@@ -10,6 +10,13 @@ Sets up VPS to start configuration like EC2. Configuration listed below:
 
 ## Setup
 
+### Clone Cookbooks
+
+```sh
+$ git clone git@github.com:tsuchikazu/vps-start-chef-cookbooks.git 
+$ cd vps-start-chef-cookbooks
+```
+
 ### Ruby Libraries
 
 You have to install the gem libraries listed below:
