@@ -8,6 +8,10 @@ run_list %w(
   recipe[site_simple_iptables] 
 )
 default_attributes(
+  "site_user" => {
+    "username" => "tsuchikazu", 
+    "ssh_keys" => ['ssh-rsa AAAAB3NzaC....']
+  }, 
   "authorization" => {
     "sudo" => {
       "users"        => ["tsuchikazu"],   
@@ -19,5 +23,5 @@ default_attributes(
       "permit_root_login"       => "no", 
       "password_authentication" => "no"
     }
-  }
+  }, 
 )

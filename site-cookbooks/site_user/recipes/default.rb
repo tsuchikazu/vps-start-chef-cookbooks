@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 
 # LWRPの呼び出し
-user_account 'tsuchikazu' do            # tsuchikazuというユーザを
-  action :create                        # 作成してね
-  ssh_keys  ['ssh-rsa AAAAB3NzaC....']  # authorized_keysはこれで
+user_account node[:site_user][:username] do
+  action :create
+  ssh_keys  node[:site_user][:ssh_keys]
 end
